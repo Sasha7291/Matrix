@@ -15,7 +15,7 @@ namespace static_matrix
     public:
         SquareMatrix() noexcept : Matrix<T, N, N>() {}
         SquareMatrix(const T value) noexcept : Matrix<T, N, N>(value) {}
-        SquareMatrix(std::span<T> array) try : Matrix<T, N, N>(array) {} catch (const MatrixException &exception) { throw exception; }
+        SquareMatrix(std::span<T> array) try : Matrix<T, N, N>(array) {} catch (const Exception &exception) { throw exception; }
         ~SquareMatrix() noexcept = default;
 
         SquareMatrix(const Matrix<T, N, N> &other) noexcept;
