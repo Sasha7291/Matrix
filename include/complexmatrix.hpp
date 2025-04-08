@@ -5,7 +5,7 @@
 #include <complex>
 
 
-namespace Matrix
+namespace static_matrix
 {
 
     template<NumberType T, const std::size_t M, const std::size_t N>
